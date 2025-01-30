@@ -1,0 +1,33 @@
+@import '../../../assets/colors.css';
+
+
+.navbar {
+background-color: var(--color-1);
+  border-bottom: 1px solid var(--color-3);
+  box-shadow: var(--color-3) 0px 0px 10px;
+  height: 80px;
+
+  .logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 50% !important;
+  }
+  .nav {
+    align-items: center;
+    .nav-link {
+      color: var(--color-5);
+      font-size: 16px;
+      font-weight: 100;
+      padding: 0 10px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+
+      &:hover {
+        font-weight: 800;
+      }
+      &.active {
+        font-weight: 800;
+      }
+    }
+  }
+}
