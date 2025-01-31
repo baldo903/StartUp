@@ -1,0 +1,42 @@
+@import "../../../styles/colors.scss";
+
+.container {
+  width: 100%;
+  padding: 20px;
+  display: block;
+}
+
+.navbar {
+  display: block;
+  .logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 50% !important;
+  }
+  .nav {
+    .nav-link {
+      color: $color-5;
+      font-size: 16px;
+      font-weight: 100;
+      padding: 2px 0px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+
+      &:hover {
+        font-weight: 800;
+      }
+    }
+
+    .social-link {
+      padding-right: 10px;
+      img {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 50px;
+  }
+}

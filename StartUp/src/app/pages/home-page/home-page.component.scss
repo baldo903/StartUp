@@ -1,0 +1,35 @@
+@import '../../../styles/colors.scss';
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    min-height: 500px;
+    margin-bottom: 20px;
+
+    &.home-page-message{
+        background-color: $color-1;
+        color: $color-4;
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+        box-shadow: $color-3 0px 0px 10px;
+    }
+
+    .home-page-card{
+        width: 100%;
+        padding: 10px;
+     
+        img{
+            width: 800px;
+            height: 500px;
+            background-color: $color-4;
+        }
+    }
+
+    .jumbotron {
+        padding: 20px;
+    }
+}
