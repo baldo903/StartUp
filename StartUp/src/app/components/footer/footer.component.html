@@ -1,17 +1,17 @@
-<div class="row navbar navbar-expand-lg">
-  <div class="col-md-12 col-xs-12">
-    <div class="container d-flex justify-content-between">
-      <p>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum."
-      </p>
-      <ul class="nav">
-        <li class="nav-item">
+<div class="navbar navbar-expand-lg">
+  <div class="container">
+    <div class="d-flex justify-content-between text-start">
+      <div class="contact-info">
+        <div class="d-flex flex-column">
+          <h2>Contact Information</h2>
+          <p><strong>Address:</strong> Jersey street, Marikina</p>
+          <p><strong>Phone:</strong> (123) 456-7890</p>
+          <p><strong>Email:</strong> contact&#64;company.com</p>
+        </div>
+      </div>
+      <div class="navigation">
+        <nav class="nav flex-column">
+          <h2>Navigation</h2>
           <a
             class="nav-link"
             routerLink="/home"
@@ -19,40 +19,44 @@
             ariaCurrentWhenActive="page"
             >Home</a
           >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            routerLink="/aboutUs"
-            routerLinkActive="active"
-            ariaCurrentWhenActive="page"
+          <a class="nav-link" routerLink="/aboutUs" ariaCurrentWhenActive="page"
             >About Us</a
           >
-        </li>
-        <li class="nav-item">
           <a
             class="nav-link"
             routerLink="/services"
-            routerLinkActive="active"
             ariaCurrentWhenActive="page"
             >Services</a
           >
-        </li>
-        <li class="nav-item">
           <a
             class="nav-link"
             routerLink="/contactUs"
-            routerLinkActive="active"
             ariaCurrentWhenActive="page"
             >Contact Us</a
           >
-        </li>
-      </ul>
+        </nav>
+      </div>
+
+      <div class="socials">
+        <h2>Social</h2>
+        <nav class="nav flex-row">
+          <a class="social-link">
+            <img src="assets/images/icons/x_icon.svg" alt="x"
+          /></a>
+          <a class="social-link">
+            <img src="assets/images/icons/ig_icon.svg" alt="ig"
+          /></a>
+          <a class="social-link">
+            <img src="assets/images/icons/yt_icon.svg" alt="yt"
+          /></a>
+          <a class="social-link">
+            <img src="assets/images/icons/linkedin_icon.svg" alt="linkedin"
+          /></a>
+        </nav>
+      </div>
     </div>
   </div>
+  <div class="copyright">
+    <p class="text-center">&copy; 2024 StartUp. All Rights Reserved.</p>
+  </div>
 </div>
-<div class="row">
-    <div class="col-md-12">
-      <p class="text-center">&copy; 2024 StartUp. All Rights Reserved.</p>
-    </div>
-  </div> 

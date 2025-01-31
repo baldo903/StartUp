@@ -5,11 +5,16 @@
   box-shadow: $color-4 0px 0px 10px;
   height: 85px;
 
-  .logo {
-    height: 70px;
-    width: 70px;
-    border-radius: 50% !important;
+  .company-logo{
+    .logo {
+      height: 70px;
+      width: 70px;
+    }
+    h3{
+      margin-left: 15px;
+    }
   }
+
   .nav {
     align-items: center;
     .nav-link {

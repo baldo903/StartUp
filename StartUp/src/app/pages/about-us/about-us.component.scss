@@ -10,24 +10,29 @@
 }
 
 .nav-underline{
-    padding: 20px;
+    padding: 10px;
 
-    .nav-link {
-        cursor: pointer;
-        color: $color-4;
-        font-size: 16px;
-        font-weight: 100;
-        padding: 0 5px;
-        text-transform: uppercase;
-        transition: all 0.3s ease;
-  
-        &:hover {
-          font-weight: 800;
-        }
-        &.active {
-          font-weight: 800;
-        }
-      }
+    .nav-item{
+        padding: 5px;
+
+        .nav-link {
+            cursor: pointer;
+            color: $color-4;
+            font-size: 16px;
+            font-weight: 100;
+            padding: 0 5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+      
+            &:hover {
+              font-weight: 800;
+            }
+            &.active {
+              font-weight: 800;
+            }
+          }
+    }
+
 }
 
 .card{
