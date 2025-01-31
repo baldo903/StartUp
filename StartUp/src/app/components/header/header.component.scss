@@ -1,11 +1,9 @@
-@import '../../../assets/colors.css';
+@import '../../../styles/colors.scss';
 
 
 .navbar {
-background-color: var(--color-1);
-  border-bottom: 1px solid var(--color-3);
-  box-shadow: var(--color-3) 0px 0px 10px;
-  height: 80px;
+  box-shadow: $color-4 0px 0px 10px;
+  height: 85px;
 
   .logo {
     height: 70px;
@@ -15,7 +13,7 @@ background-color: var(--color-1);
   .nav {
     align-items: center;
     .nav-link {
-      color: var(--color-5);
+      color: $color-5;
       font-size: 16px;
       font-weight: 100;
       padding: 0 10px;

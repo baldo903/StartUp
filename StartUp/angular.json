@@ -3,9 +3,13 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "StarUp": {
+    "StartUp": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -24,17 +28,17 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              "src/styles",
               {
                 "glob": "**/*",
                 "input": "public"
               }
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css",
-              "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
           },
           "configurations": {
             "production": {
@@ -64,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "StarUp:build:production"
+              "buildTarget": "StartUp:build:production"
             },
             "development": {
-              "buildTarget": "StarUp:build:development"
+              "buildTarget": "StartUp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -91,9 +95,9 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
           }
         },
         "lint": {
@@ -101,7 +105,8 @@
           "options": {
             "lintFilePatterns": [
               "src/**/*.ts",
-              "src/**/*.html"
+              "src/**/*.html",
+              "src/**/*.scss"
             ]
           }
         }

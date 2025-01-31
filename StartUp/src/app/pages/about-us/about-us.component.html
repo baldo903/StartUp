@@ -1,1 +1,144 @@
-<p>about-us works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="jumbotron">
+        <h1 class="display-1">Who are we?</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 col-xs-12">
+      <ul class="nav nav-underline">
+        <li class="nav-item" (click)="showDetails('upoy')">
+          <a class="nav-link" [ngClass]="{ active: selected === 'upoy' }"
+            >Jeffrey</a
+          >
+        </li>
+        <li class="nav-item" (click)="showDetails('hawi')">
+          <a class="nav-link" [ngClass]="{ active: selected === 'hawi' }"
+            >Harron</a
+          >
+        </li>
+        <li class="nav-item" (click)="showDetails('bert')">
+          <a class="nav-link" [ngClass]="{ active: selected === 'bert' }"
+            >Robert</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <img src="{{ imgPath }}" class="w-100" alt="Responsive image" />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-xs-12">
+      <div class="card" *ngIf="selected === 'upoy'">
+        <h5 class="card-header">Jeffrey Tayawa</h5>
+        <div class="card-body">
+          <p class="card-text">
+            Pastrami ground round kevin beef ribs frankfurter ball tip. Short
+            ribs biltong sausage pig beef ribs short loin. Filet mignon
+            prosciutto ham bacon tail. Porchetta alcatra venison, meatball rump
+            hamburger fatback spare ribs. Venison ball tip bacon pancetta. Ham
+            hock biltong venison kevin doner, capicola short loin ribeye
+            tenderloin.
+            <br />
+            <br />
+            Strip steak alcatra meatloaf chislic swine bresaola buffalo tail
+            drumstick, hamburger frankfurter. Tri-tip bresaola boudin, andouille
+            strip steak picanha burgdoggen short ribs pork chop tongue pork loin
+            t-bone ham sirloin. Porchetta andouille meatball, doner ham hock
+            t-bone short ribs corned beef buffalo tongue biltong chuck pork chop
+            drumstick pig. Cupim burgdoggen pork chop pork fatback. Salami
+            ground round venison prosciutto corned beef bresaola filet mignon
+            alcatra landjaeger.
+          </p>
+        </div>
+      </div>
+      <div class="card" *ngIf="selected === 'hawi'">
+        <h5 class="card-header">Harron Sapiter</h5>
+        <div class="card-body">
+          <p class="card-text">
+            Chuck pork loin drumstick brisket burgdoggen. Spare ribs chicken
+            biltong hamburger filet mignon. Brisket pastrami ham hock leberkas.
+            Prosciutto spare ribs capicola, swine sausage drumstick doner boudin
+            shankle.
+            <br />
+            <br />
+            Flank frankfurter sirloin ribeye tongue short loin capicola brisket
+            venison pork fatback. Chuck pork loin drumstick brisket burgdoggen.
+            Spare ribs chicken biltong hamburger filet mignon. Brisket pastrami
+            ham hock leberkas. Prosciutto spare ribs capicola, swine sausage
+            drumstick doner boudin shankle. Flank frankfurter sirloin ribeye
+            tongue short loin capicola brisket venison pork fatback.
+          </p>
+        </div>
+      </div>
+      <div class="card" *ngIf="selected === 'bert'">
+        <h5 class="card-header">Robert Escalante</h5>
+        <div class="card-body">
+          <p class="card-text">
+            Bacon ipsum dolor amet shank frankfurter turducken, chuck pork loin
+            bacon swine kevin pork chop beef. Short ribs andouille ham hock
+            strip steak leberkas, t-bone pork shankle beef bacon turkey pork
+            belly hamburger.
+            <br />
+            <br />
+            Tri-tip alcatra pork loin shoulder meatball. Kevin beef ribs brisket
+            tail pancetta. Meatball turkey jerky prosciutto, salami tongue
+            turducken boudin tail picanha. Turducken beef tri-tip, meatball
+            flank cupim drumstick swine ground round picanha cow prosciutto
+            salami andouille. Cow ham shank jowl kevin ham hock flank turducken.
+            Cow cupim leberkas doner tail drumstick.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="achievements">
+    <div class="row">
+      <div class="col-md-12 col-xs-12 d-flex justify-content-between">
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">
+              Card subtitle
+            </h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">
+              Card subtitle
+            </h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">
+              Card subtitle
+            </h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
