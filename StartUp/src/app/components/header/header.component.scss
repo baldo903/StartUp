@@ -4,16 +4,21 @@
 .navbar {
   box-shadow: $color-4 0px 0px 10px;
   height: 85px;
+  background-color: $color-1;
 
-  .company-logo{
-    .logo {
-      height: 70px;
-      width: 70px;
+  .container{
+    align-items: center;
+
+    .company-logo{
+      .logo {
+        height: 70px;
+        width: 70px;
+      }
+      h2{
+        margin-left: 10px;
+        margin-bottom: 0;
+      }
     }
-    h3{
-      margin-left: 15px;
-    }
-  }
 
   .nav {
     align-items: center;
@@ -33,4 +38,7 @@
       }
     }
   }
+  }
+
+
 }
