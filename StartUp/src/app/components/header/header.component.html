@@ -1,24 +1,141 @@
-<div class="row navbar navbar-expand-lg">
-  <div class="col-md-12 col-xs-6">
-    <div class="container d-flex justify-content-between">
-      <div class="company-logo d-flex flex-row align-items-center">
-        <img src="assets/logos/MT_logo.svg" alt="logo" class="logo">
-        <h2>MundoTek Enterprise</h2>
-      </div>
-
-        <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/aboutUs" routerLinkActive="active" ariaCurrentWhenActive="page">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/services" routerLinkActive="active" ariaCurrentWhenActive="page">Services</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/contactUs" routerLinkActive="active" ariaCurrentWhenActive="page">Contact Us</a>
-              </li>
-          </ul>
+<nav class="shadow-lg h-[85px] bg-white dark:bg-gray-900 sticky top-0 z-50">
+  <div class="flex items-center h-full px-4 sm:px-6 w-full max-w-7xl mx-auto sm:flex-row flex-row justify-between">
+    <!-- Logo and Brand -->
+    <div class="flex items-center gap-2 sm:gap-3">
+      <img
+        src="assets/logos/MT_logo.svg"
+        alt="MundoTek Logo"
+        class="h-10 w-10 sm:h-[60px] sm:w-[60px] shadow-md p-1 bg-white rounded-full"
+      />
+      <span
+        class="text-lg sm:text-2xl font-extrabold text-secondary dark:text-gray-100 tracking-wide"
+        >MundoTek Enterprise</span
+      >
     </div>
-</div>
+    <!-- Desktop Navigation Links -->
+    <ul class="hidden md:flex items-center ml-auto gap-1 sm:gap-2">
+      <li>
+        <a
+          class="text-secondary dark:text-gray-100 text-sm sm:text-[16px] font-medium px-2 sm:px-3 py-2 rounded transition-all duration-200 hover:bg-gray-100 hover:font-bold focus:bg-gray-100 focus:font-bold dark:hover:bg-gray-800 dark:focus:bg-gray-800 uppercase"
+          routerLink="/home"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          class="text-secondary dark:text-gray-100 text-sm sm:text-[16px] font-medium px-2 sm:px-3 py-2 rounded transition-all duration-200 hover:bg-gray-100 hover:font-bold focus:bg-gray-100 focus:font-bold dark:hover:bg-gray-800 dark:focus:bg-gray-800 uppercase"
+          routerLink="/aboutUs"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          >About Us</a
+        >
+      </li>
+      <li>
+        <a
+          class="text-secondary dark:text-gray-100 text-sm sm:text-[16px] font-medium px-2 sm:px-3 py-2 rounded transition-all duration-200 hover:bg-gray-100 hover:font-bold focus:bg-gray-100 focus:font-bold dark:hover:bg-gray-800 dark:focus:bg-gray-800 uppercase"
+          routerLink="/services"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          >Services</a
+        >
+      </li>
+      <li>
+        <a
+          class="text-secondary dark:text-gray-100 text-sm sm:text-[16px] font-medium px-2 sm:px-3 py-2 rounded transition-all duration-200 hover:bg-gray-100 hover:font-bold focus:bg-gray-100 focus:font-bold dark:hover:bg-gray-800 dark:focus:bg-gray-800 uppercase"
+          routerLink="/contactUs"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          >Contact Us</a
+        >
+      </li>
+    </ul>
+    <!-- Mobile Nav (Hamburger) -->
+    <div class="md:hidden ml-2 relative">
+      <button
+        (click)="showMobileNav = !showMobileNav"
+        aria-label="Open navigation menu"
+        class="focus:outline-none"
+      >
+        <span class="block w-6 h-0.5 bg-gray-700 mb-1"></span>
+        <span class="block w-6 h-0.5 bg-gray-700 mb-1"></span>
+        <span class="block w-6 h-0.5 bg-gray-700"></span>
+      </button>
+      <ul
+        *ngIf="showMobileNav"
+        class="absolute right-0 mt-2 w-40 bg-white dark:bg-gray-900 rounded shadow-lg flex flex-col z-50"
+      >
+        <li>
+          <a
+            class="block w-full text-secondary dark:text-gray-100 text-base font-medium px-4 py-3 rounded transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 uppercase"
+            routerLink="/home"
+            (click)="showMobileNav = false"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            class="block w-full text-secondary dark:text-gray-100 text-base font-medium px-4 py-3 rounded transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 uppercase"
+            routerLink="/aboutUs"
+            (click)="showMobileNav = false"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a
+            class="block w-full text-secondary dark:text-gray-100 text-base font-medium px-4 py-3 rounded transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 uppercase"
+            routerLink="/services"
+            (click)="showMobileNav = false"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            class="block w-full text-secondary dark:text-gray-100 text-base font-medium px-4 py-3 rounded transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 uppercase"
+            routerLink="/contactUs"
+            (click)="showMobileNav = false"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- Theme Toggle Button -->
+    <button
+      class="ml-2 sm:ml-6 p-2 rounded-full border border-gray-400 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+      (click)="toggleTheme()"
+      aria-label="Toggle light/dark mode"
+    >
+      <svg
+        *ngIf="!isDarkMode"
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5 sm:h-6 sm:w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 3v1m0 16v1m8.66-8.66l-.71.71M4.05 19.07l-.71.71M21 12h-1M4 12H3m16.95-7.07l-.71.71M4.05 4.93l-.71-.71"
+        />
+      </svg>
+      <svg
+        *ngIf="isDarkMode"
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5 sm:h-6 sm:w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"
+        />
+      </svg>
+    </button>
+  </div>
+</nav>

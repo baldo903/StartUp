@@ -5,7 +5,6 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-about-us',
   imports: [CommonModule],
   templateUrl: './about-us.component.html',
-  styleUrl: './about-us.component.scss',
 })
 export class AboutUsComponent implements OnInit {
   default = 'upoy';

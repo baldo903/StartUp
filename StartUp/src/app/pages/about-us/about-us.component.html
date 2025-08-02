@@ -1,144 +1,162 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="jumbotron">
-        <h1 class="display-1">Who are we?</h1>
-      </div>
+<div
+  class="w-full flex flex-col justify-center items-center min-h-[500px]"
+>
+  <!-- About Us Hero Section -->
+  <section
+    class="w-full flex flex-col items-center justify-center bg-primary dark:bg-gray-900 py-10 sm:py-16 px-2 sm:px-4"
+  >
+    <div class="max-w-3xl w-full text-center mb-8 sm:mb-10">
+      <h1
+        class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-secondary dark:text-gray-100 mb-4"
+      >
+        About Our Company
+      </h1>
+      <p
+        class="text-base sm:text-xl md:text-2xl text-gray-700 dark:text-gray-300 font-light mb-6 sm:mb-8"
+      >
+        We are a team of passionate professionals dedicated to delivering
+        innovative solutions and driving business success for our clients.
+      </p>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12 col-xs-12">
-      <ul class="nav nav-underline">
-        <li class="nav-item" (click)="showDetails('upoy')">
-          <a class="nav-link" [ngClass]="{ active: selected === 'upoy' }"
-            >Jeffrey</a
-          >
-        </li>
-        <li class="nav-item" (click)="showDetails('hawi')">
-          <a class="nav-link" [ngClass]="{ active: selected === 'hawi' }"
-            >Harron</a
-          >
-        </li>
-        <li class="nav-item" (click)="showDetails('bert')">
-          <a class="nav-link" [ngClass]="{ active: selected === 'bert' }"
-            >Robert</a
-          >
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-body">
-          <img src="{{ imgPath }}" class="w-100" alt="Responsive image" />
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6 col-xs-12">
-      <div class="card" *ngIf="selected === 'upoy'">
-        <h5 class="card-header">Jeffrey Tayawa</h5>
-        <div class="card-body">
-          <p class="card-text">
-            Pastrami ground round kevin beef ribs frankfurter ball tip. Short
-            ribs biltong sausage pig beef ribs short loin. Filet mignon
-            prosciutto ham bacon tail. Porchetta alcatra venison, meatball rump
-            hamburger fatback spare ribs. Venison ball tip bacon pancetta. Ham
-            hock biltong venison kevin doner, capicola short loin ribeye
-            tenderloin.
-            <br />
-            <br />
-            Strip steak alcatra meatloaf chislic swine bresaola buffalo tail
-            drumstick, hamburger frankfurter. Tri-tip bresaola boudin, andouille
-            strip steak picanha burgdoggen short ribs pork chop tongue pork loin
-            t-bone ham sirloin. Porchetta andouille meatball, doner ham hock
-            t-bone short ribs corned beef buffalo tongue biltong chuck pork chop
-            drumstick pig. Cupim burgdoggen pork chop pork fatback. Salami
-            ground round venison prosciutto corned beef bresaola filet mignon
-            alcatra landjaeger.
+  </section>
+
+  <!-- Leadership/Team Section -->
+  <section class="w-full py-10 sm:py-16 px-2 sm:px-4 bg-white dark:bg-gray-800">
+    <div class="max-w-6xl mx-auto">
+      <h2
+        class="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-secondary dark:text-gray-100 mb-8 sm:mb-10"
+      >
+        Meet Our Leadership
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
+        <div
+          class="bg-primary dark:bg-gray-900 rounded-lg shadow p-4 sm:p-8 flex flex-col items-center text-center"
+        >
+          <img
+            src="../../../assets/images/upoy.jpg"
+            alt="Jeffrey Tayawa"
+            class="w-24 h-24 sm:w-32 sm:h-32 object-cover rounded-full mb-4 shadow-lg border-4 border-white dark:border-gray-700"
+          />
+          <h3 class="text-lg sm:text-xl font-semibold mb-1 dark:text-gray-100">
+            Jeffrey Tayawa
+          </h3>
+          <p class="text-gray-700 dark:text-gray-300 text-sm sm:text-base mb-2">
+            Chief Executive Officer
+          </p>
+          <p class="text-gray-500 dark:text-gray-400 text-xs sm:text-sm">
+            Visionary leader with a passion for technology and business
+            transformation.
           </p>
         </div>
-      </div>
-      <div class="card" *ngIf="selected === 'hawi'">
-        <h5 class="card-header">Harron Sapiter</h5>
-        <div class="card-body">
-          <p class="card-text">
-            Chuck pork loin drumstick brisket burgdoggen. Spare ribs chicken
-            biltong hamburger filet mignon. Brisket pastrami ham hock leberkas.
-            Prosciutto spare ribs capicola, swine sausage drumstick doner boudin
-            shankle.
-            <br />
-            <br />
-            Flank frankfurter sirloin ribeye tongue short loin capicola brisket
-            venison pork fatback. Chuck pork loin drumstick brisket burgdoggen.
-            Spare ribs chicken biltong hamburger filet mignon. Brisket pastrami
-            ham hock leberkas. Prosciutto spare ribs capicola, swine sausage
-            drumstick doner boudin shankle. Flank frankfurter sirloin ribeye
-            tongue short loin capicola brisket venison pork fatback.
+        <div
+          class="bg-primary dark:bg-gray-900 rounded-lg shadow p-4 sm:p-8 flex flex-col items-center text-center"
+        >
+          <img
+            src="../../../assets/images/hawi.jpg"
+            alt="Harron Sapiter"
+            class="w-24 h-24 sm:w-32 sm:h-32 object-cover rounded-full mb-4 shadow-lg border-4 border-white dark:border-gray-700"
+          />
+          <h3 class="text-lg sm:text-xl font-semibold mb-1 dark:text-gray-100">
+            Harron Sapiter
+          </h3>
+          <p class="text-gray-700 dark:text-gray-300 text-sm sm:text-base mb-2">
+            Chief Operations Officer
+          </p>
+          <p class="text-gray-500 dark:text-gray-400 text-xs sm:text-sm">
+            Expert in digital solutions and enterprise architecture.
           </p>
         </div>
-      </div>
-      <div class="card" *ngIf="selected === 'bert'">
-        <h5 class="card-header">Robert Escalante</h5>
-        <div class="card-body">
-          <p class="card-text">
-            Bacon ipsum dolor amet shank frankfurter turducken, chuck pork loin
-            bacon swine kevin pork chop beef. Short ribs andouille ham hock
-            strip steak leberkas, t-bone pork shankle beef bacon turkey pork
-            belly hamburger.
-            <br />
-            <br />
-            Tri-tip alcatra pork loin shoulder meatball. Kevin beef ribs brisket
-            tail pancetta. Meatball turkey jerky prosciutto, salami tongue
-            turducken boudin tail picanha. Turducken beef tri-tip, meatball
-            flank cupim drumstick swine ground round picanha cow prosciutto
-            salami andouille. Cow ham shank jowl kevin ham hock flank turducken.
-            Cow cupim leberkas doner tail drumstick.
+        <div
+          class="bg-primary dark:bg-gray-900 rounded-lg shadow p-4 sm:p-8 flex flex-col items-center text-center"
+        >
+          <img
+            src="../../../assets/images/bert.jpg"
+            alt="Robert Escalante"
+            class="w-24 h-24 sm:w-32 sm:h-32 object-cover rounded-full mb-4 shadow-lg border-4 border-white dark:border-gray-700"
+          />
+          <h3 class="text-lg sm:text-xl font-semibold mb-1 dark:text-gray-100">
+            Robert Escalante
+          </h3>
+          <p class="text-gray-700 dark:text-gray-300 text-sm sm:text-base mb-2">
+            Chief Technology Officer
+          </p>
+          <p class="text-gray-500 dark:text-gray-400 text-xs sm:text-sm">
+            Driving operational excellence and client satisfaction.
           </p>
         </div>
       </div>
     </div>
-  </div>
-  <div class="achievements">
-    <div class="row">
-      <div class="col-md-12 col-xs-12 d-flex justify-content-between">
-        <div class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">
-              Card subtitle
-            </h6>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-          </div>
+  </section>
+
+  <!-- Company Values Section -->
+  <section class="w-full py-10 sm:py-16 px-2 sm:px-4 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-6xl mx-auto">
+      <h2
+        class="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-secondary dark:text-gray-100 mb-8 sm:mb-10"
+      >
+        Our Core Values
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
+        <div
+          class="bg-white dark:bg-gray-800 rounded-lg shadow p-4 sm:p-8 flex flex-col items-center text-center"
+        >
+          <svg
+            class="w-10 h-10 sm:w-12 sm:h-12 mb-4 text-secondary dark:text-gray-100"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 4v16m8-8H4" />
+          </svg>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2 dark:text-gray-100">
+            Innovation
+          </h3>
+          <p class="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
+            We embrace change and constantly seek new ways to deliver value.
+          </p>
         </div>
-        <div class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">
-              Card subtitle
-            </h6>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-          </div>
+        <div
+          class="bg-white dark:bg-gray-800 rounded-lg shadow p-4 sm:p-8 flex flex-col items-center text-center"
+        >
+          <svg
+            class="w-10 h-10 sm:w-12 sm:h-12 mb-4 text-secondary dark:text-gray-100"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="M8 12l2 2 4-4" />
+          </svg>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2 dark:text-gray-100">
+            Integrity
+          </h3>
+          <p class="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
+            We act with honesty, transparency, and respect in all our
+            relationships.
+          </p>
         </div>
-        <div class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">
-              Card subtitle
-            </h6>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-          </div>
+        <div
+          class="bg-white dark:bg-gray-800 rounded-lg shadow p-4 sm:p-8 flex flex-col items-center text-center"
+        >
+          <svg
+            class="w-10 h-10 sm:w-12 sm:h-12 mb-4 text-secondary dark:text-gray-100"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M3 12l2-2 4 4 8-8 4 4" />
+          </svg>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2 dark:text-gray-100">
+            Excellence
+          </h3>
+          <p class="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
+            We strive for the highest standards in everything we do.
+          </p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </div>

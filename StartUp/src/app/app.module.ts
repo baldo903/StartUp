@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
 import { ComponentsModule } from './components/components.module';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgClass } from '@angular/common';
 
 
 @NgModule({
@@ -13,12 +13,13 @@ import { CommonModule } from '@angular/common';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    CommonModule      
-  ],
-  declarations: [
-    AppComponent,
+    CommonModule,
+    NgClass,
     PagesModule,
     ComponentsModule
+  ],
+  declarations: [
+    AppComponent
   ],
   bootstrap: [ AppComponent ]
 })

@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 html, body {
-  @apply font-roboto;
+  font-family: 'RobotoFlex', sans-serif;
 }
