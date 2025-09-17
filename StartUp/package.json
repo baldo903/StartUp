@@ -1,18 +1,26 @@
 {
-  "name": "star-up",
+  "name": "start-up",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:ssl": "ng serve --ssl",
+    "start:open": "ng serve --open",
     "build": "ng build",
+    "build:prod": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "test:watch": "ng test --watch",
+    "lint": "ng lint",
+    "lint:fix": "ng lint --fix",
+    "e2e": "ng e2e",
+    "format": "prettier --write \"src/**/*.html\""
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^19.1.0",
     "@angular/common": "^19.1.0",
-    "@angular/compiler": "^19.1.0",
+    "@angular/compiler": "^19.1.4",
     "@angular/core": "^19.1.0",
     "@angular/forms": "^19.1.0",
     "@angular/platform-browser": "^19.1.0",
@@ -26,13 +34,20 @@
     "@angular-devkit/build-angular": "^19.1.5",
     "@angular/cli": "^19.1.5",
     "@angular/compiler-cli": "^19.1.0",
+    "@angular/localize": "^19.1.0",
     "@types/jasmine": "~5.1.0",
+    "angular-eslint": "19.0.2",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.16.0",
     "jasmine-core": "~5.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.7.2"
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "8.18.0"
   }
 }
